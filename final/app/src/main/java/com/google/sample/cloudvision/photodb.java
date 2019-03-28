@@ -236,7 +236,7 @@ public class photodb extends AppCompatActivity implements OnLikeListener,
     }
     @Override
     public void liked(LikeButton likeButton) {
-      //  Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show();
         final DBHelper dbHelper = new DBHelper(getApplicationContext(), "beerbook1.db", null, 1);
         dbHelper.changestarnum(findstring,1);
     }

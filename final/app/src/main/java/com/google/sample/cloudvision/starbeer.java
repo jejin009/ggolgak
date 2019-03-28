@@ -70,7 +70,6 @@ public class starbeer extends AppCompatActivity {
                 aaa = aaa.replace("=","");
                 aaa = aaa.replace("}","");
                 findstring = aaa.replace("\"","");
-                Toast.makeText(getApplicationContext(), "Position " + position, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), photodb.class);
                 if(findstring.equals("망고링고"))
                     findstring = "MangoRingo";

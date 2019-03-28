@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 "Tiger",
                 "Tsingtao",
                 "Wabar Dunkel",
-                "Weidmann Weissbier Hefeweiss"
+                "Weidmann Weissbier Hefeweiss","MangoRingo"
 
         };
     }
@@ -350,6 +350,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static int[] sendclusterresult() {
         return assignments;
     }
+
+
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="false"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/changefont"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="38dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/dosu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/changefont"
+                android:gravity="center_horizontal"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dosu"
+                android:layout_alignLeft="@id/beertype"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/changefont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/beertype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/changefont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ipa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/beertype"
+                android:layout_alignLeft="@id/beertype"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/changefont"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ipa"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/changefont"
+                android:gravity="center_horizontal"
+                android:textSize="28dp" />
+            <!--android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="220dp"
+        -->
+
+            <TextView
+                android:id="@+id/dosutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="14dp"
+                android:paddingLeft="1dp" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dosutext"
+                android:layout_weight="2"
+                android:paddingTop="12dp" />
+
+
+            <com.like.LikeButton
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                app:icon_size="28dp"
+                app:icon_type="star"
+                app:liked="false" />
+
+            <TextView
+                android:id="@+id/explaintxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feature"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/photo_corner"
+                android:fontFamily="@font/changefont"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="이 맥주와 비슷한 맥주입니다\n클릭하시면 상세정보를 보실 수 있습니다"
+                android:textColor="#99000000" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bankcardId"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/explaintxt"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="60dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/recomimage1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/explaintxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bankcardId2"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/explaintxt"
+                android:layout_alignTop="@+id/bankcardId"
+
+                android:layout_marginLeft="130dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/recomimage2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/explaintxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal|center_vertical" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bankcardId3"
+                android:layout_alignTop="@+id/bankcardId"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/explaintxt"
+                android:layout_marginLeft="240dp"
+
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/recomimage3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

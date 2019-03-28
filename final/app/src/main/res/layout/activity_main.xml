@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.google.sample.cloudvision.MainActivity">
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/editText"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true" />
+
+    <ListView
+
+        android:id="@+id/listView"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText"
+
+        android:layout_alignStart="@+id/editText"
+
+        android:layout_alignLeft="@+id/editText"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginRight="20dp" />
+
+   <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/image_details"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image" />
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="160dp"
+            android:layout_marginRight="15sp"
+            android:visibility="invisible"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+        <TextView
+            android:id="@+id/cameratext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="70sp"
+            android:layout_marginBottom="180dp"
+            android:text="맥주사진 찍기"
+            android:fontFamily="@font/changefont"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/recommandfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="90dp"
+            android:visibility="invisible"
+            android:src="@android:drawable/ic_input_get"
+            app:backgroundTint="#ffffff"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+        <TextView
+            android:id="@+id/recomtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="70sp"
+            android:layout_marginBottom="110dp"
+            android:layout_toLeftOf="@+id/recommandfab"
+            android:text="맥주추천"
+            android:fontFamily="@font/changefont"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/starfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="230dp"
+            android:visibility="invisible"
+            android:src="@android:drawable/btn_star_big_off"
+            app:backgroundTint="#ffffff"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+        <TextView
+            android:id="@+id/startext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="70sp"
+            android:layout_marginBottom="250dp"
+            android:layout_toLeftOf="@+id/starfab"
+            android:text="내가 좋아하는 맥주"
+            android:fontFamily="@font/changefont"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </android.support.v7.widget.ContentFrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15sp"
+        android:backgroundTint="#1383d4"
+        android:src="@drawable/fab_add" />
+
+
+</android.support.design.widget.CoordinatorLayout>

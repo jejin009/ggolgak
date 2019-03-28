@@ -228,7 +228,12 @@ public class photodb extends AppCompatActivity implements OnLikeListener,
 
         return super.onOptionsItemSelected(item);
     }
-
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        super.onBackPressed();
+    }
     @Override
     public void liked(LikeButton likeButton) {
       //  Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show();

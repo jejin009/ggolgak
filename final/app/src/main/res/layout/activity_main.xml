@@ -7,6 +7,21 @@
     android:fitsSystemWindows="true"
     tools:context="com.google.sample.cloudvision.MainActivity">
 
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/image_details"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/image" />
 
     <EditText
 
@@ -44,20 +59,6 @@
 
         android:layout_marginRight="20dp" />
 
-   <ImageView
-        android:id="@+id/main_image"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:visibility="invisible"
-        android:layout_alignParentLeft="false"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/image_details"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image" />
     <android.support.v7.widget.ContentFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

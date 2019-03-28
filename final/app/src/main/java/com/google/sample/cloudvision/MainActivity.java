@@ -132,13 +132,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 "Leffe Blonde",
                 "Leffe Brune",
                 "Max",
-                "miller lite",
+                "Miller lite",
                 "Paulaner Hefe-Weizen",
                 "Peroni Original",
                 "Peroni Red",
                 "Pilsner Urquell",
                 "Royal Dutch Post Horn Hefeweizen",
-                "royal dutch",
+                "Royal dutch",
                 "San Miguel Dark Lager",
                 "San Miguel Pale Pilsen",
                 "Sapporo Premium Beer",
@@ -373,6 +373,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
     public void anim() {
 
         if (isFabOpen) {

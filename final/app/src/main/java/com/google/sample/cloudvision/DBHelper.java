@@ -373,8 +373,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
         recombeer[0] = allbeer[1];
         recombeer[1] = allbeer[3];
-        recombeer[2] = allbeer[5];
-        recombeer[3] = allbeer[6];
+        recombeer[2] = allbeer[4];
+        recombeer[3] = allbeer[0];
 
         for(int z=0; z<recombeer.length;z++){
             if(recombeer[z].equals(name)){
